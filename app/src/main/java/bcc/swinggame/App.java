@@ -6,6 +6,6 @@ package bcc.swinggame;
 public class App {
 
     public static void main(String[] args) {
-        new HelloWorldExample();
+        new JavarioGui();
     }
 }
