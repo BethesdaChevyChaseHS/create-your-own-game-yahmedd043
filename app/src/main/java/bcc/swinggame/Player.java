@@ -11,6 +11,8 @@ public class Player extends Entity{
         } else if (dir == Constants.DOWN) {
             yPos += speed;
         }
+
+        super.update();
     }
 
     public void horzUpdate(int dir){
@@ -19,5 +21,7 @@ public class Player extends Entity{
         } else if (dir == Constants.LEFT) {
             xPos -= speed;
         }
+
+        super.update();
     }
 }

@@ -40,5 +40,16 @@ public class Entity {
 
     // update method for all entities, placeholder at the moment
     public void update() {
+        if (xPos > Constants.CANVAS_WIDTH) {
+            xPos = Constants.CANVAS_WIDTH;
+        } else if (xPos < 0) {
+            xPos = 0;
+        }
+        
+        if (yPos > Constants.CANVAS_HEIGHT) {
+            yPos = Constants.CANVAS_HEIGHT;
+        } else if (yPos < 0) {
+            yPos = 0;
+        }
     }
 }
