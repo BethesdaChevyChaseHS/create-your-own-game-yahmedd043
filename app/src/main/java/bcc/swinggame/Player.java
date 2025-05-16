@@ -5,6 +5,11 @@ public class Player extends Entity{
         super(xPos, yPos, width, height, health, speed);
     }
 
+    public void takeDamage(int damage) {
+        health -= damage;
+        super.update();
+    }
+
     public void vertUpdate(int dir){
         if (dir == Constants.UP) {
             yPos -= speed;

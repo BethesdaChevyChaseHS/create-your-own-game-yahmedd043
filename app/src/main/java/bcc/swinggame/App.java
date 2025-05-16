@@ -6,9 +6,5 @@ package bcc.swinggame;
 public class App {
     public static void main(String[] args) {
         new JavarioGui();
-
-        while (true) {
-            
-        }
     }
 }
