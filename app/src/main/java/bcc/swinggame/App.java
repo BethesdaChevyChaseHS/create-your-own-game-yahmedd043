@@ -3,8 +3,22 @@
  */
 package bcc.swinggame;
 
+import javax.swing.*;
+import java.awt.*;
+
 public class App {
     public static void main(String[] args) {
-        new JavarioGui();
+        // Create the window
+        JFrame frame = new JFrame("Javario");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(Constants.CANVAS_WIDTH, Constants.CANVAS_HEIGHT);
+        frame.setResizable(false);
+
+        // Text
+        JLabel label = new JLabel("something or other");
+        label.setHorizontalAlignment(200);
+        label.setVerticalAlignment(300);
+
+        frame.setVisible(true);
     }
 }
