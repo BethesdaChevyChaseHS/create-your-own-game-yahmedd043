@@ -22,10 +22,10 @@ public class Runner {
             if (game.emptySpaces().size() < 9) {
                 System.out.println("\033[1;34m" + "AI:" + "\033[0m" + " " + ai.getRemark());
             }
-            System.out.println("\033[1;37m" + "Pick a row and column! (0-2 for both, separated)" + "\033[0m");
+            System.out.println("\033[1;37m" + "Pick a row and column! (1-3 for both, separated)" + "\033[0m");
             int row = scanner.nextInt();
             int col = scanner.nextInt();
-            if (!game.makeMove(row, col, PLAYER)) {
+            if (!game.makeMove(row - 1, col - 1, PLAYER)) {
                 System.out.println("\033[1;33m" + "Invalid, try again!" + "\033[0m");
                 continue; // if the move is invalid, go to the next iteration
             }
