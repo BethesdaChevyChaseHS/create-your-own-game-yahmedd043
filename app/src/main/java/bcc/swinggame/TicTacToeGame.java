@@ -56,6 +56,9 @@ public class TicTacToeGame {
         if (board[0][0].equals(player) && board[1][1].equals(player) && board[2][2].equals(player)) {
             return true;
         }
+        if (board[0][2].equals(player) && board[1][1].equals(player) && board[2][0].equals(player)) {
+            return true;
+        }
 
         // else, return false
         return false;
